@@ -5,7 +5,33 @@
 //  Created by 姜况童 on 16/6/8.
 //  Copyright © 2016年 姜况童. All rights reserved.
 //
+#include<iostream>
+#include<string>//When use string you should add <string>
+using namespace std;
 
+int main(){//Take care 12...n means the unit
+    //string s="0";
+    //for (int i = 1;i < 10;++i) {
+    //	s += "i";
+    //}
+    //cout << s<< endl;
+    int number;
+    cin >> number;
+    int b = 0;
+    int s = 0;
+    int n = 0;
+    b = number / 100;
+    cout <<string(b, 'B');
+    number %= 100;
+    s = number / 10;
+    cout << string(s, 'S');
+    number %= 10;
+    n = number;
+    for (int i = 1;i <= n;++i) {
+        cout << i;
+    }
+    return 0;
+}
 //#include<iostream>
 //#include<string>
 //using namespace std;
