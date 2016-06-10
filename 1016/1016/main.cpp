@@ -7,8 +7,47 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main() {
+    long int a = 0;
+    long int b = 0;
+    int da = 0;
+    int db = 0;
+    int counta = 0;
+    int countb = 0;
+    long int suma = 0;
+    long int sumb = 0;
+    long long sum = 0;
+    cin >> a >> da >> b >> db;
+    while (a>0)
+    {
+        if (a % 10 == da)
+        {
+            counta += 1;
+        }
+        a /= 10;
+    }
+    while (b>0)//Take care when there is 0
+    {
+        if (b % 10 == db)
+        {
+            countb += 1;
+        }
+        b /= 10;
+    }
+    for (int i = 0;i<counta;++i)
+    {
+        suma *= 10;
+        suma += da;
+    }
+    for(int i=0;i<countb;++i)
+    {
+        sumb *= 10;
+        sumb += db;
+    }
+    sum = suma + sumb;
+    cout << sum << endl;
+    
     //string a="";
     //string b = "";
     //vector<string> aout;
