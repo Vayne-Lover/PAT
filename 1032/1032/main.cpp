@@ -11,6 +11,7 @@ using namespace std;
 int main() {
     int max = 0;
     int maxSum = 0;
+    int maxSchool = 1;
     int count = 0;
     cin >> count;
     vector<int> school(count,0);
@@ -23,6 +24,12 @@ int main() {
     {
         if (it > max)
             max = it;
+    }
+    //vector<int> eachSchool(max);
+    vector<int> sumOfScore(max,0);
+    for (int j = 0;j < count;++j)
+    {
+        sumOfScore[school[j]-1] += score[j];
     }
 
     return 0;
