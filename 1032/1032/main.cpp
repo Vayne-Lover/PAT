@@ -31,6 +31,14 @@ int main() {
     {
         sumOfScore[school[j]-1] += score[j];
     }
-
+    for (int k = 0;k < max;++k)
+    {
+        if (sumOfScore[k] > maxSum)
+        {
+            maxSchool = k + 1;
+            maxSum = sumOfScore[k];
+        }
+    }
+    cout << maxSchool << " " << maxSum << endl;
     return 0;
 }
