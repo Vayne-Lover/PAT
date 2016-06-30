@@ -13,6 +13,7 @@ using namespace std;
 int main(int argc, const char * argv[]) {
     int count=0;
     int tempInt=0;
+    int searchCount=0;
     string tempStr;
     vector<string> str;
     vector<int> in1;
@@ -25,6 +26,18 @@ int main(int argc, const char * argv[]) {
         in1.push_back(tempInt);
         cin>>tempInt;
         in2.push_back(tempInt);
+    }
+    cin>>searchCount;
+    for (int j=0; j<searchCount; ++j) {
+        cin>>tempInt;
+        for(auto it=in2.begin();it!=in2.end();++it)
+        {
+            if(*it==tempInt)
+            {
+                cout<<str[it-in2.begin()]<<" "<<in2[it-in2.begin()]<<endl;
+                break;
+            }
+        }
     }
     return 0;
 }
