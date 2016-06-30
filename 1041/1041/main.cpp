@@ -30,11 +30,11 @@ int main(int argc, const char * argv[]) {
     cin>>searchCount;
     for (int j=0; j<searchCount; ++j) {
         cin>>tempInt;
-        for(auto it=in2.begin();it!=in2.end();++it)
+        for(auto it=in1.begin();it!=in1.end();++it)
         {
             if(*it==tempInt)
             {
-                cout<<str[it-in2.begin()]<<" "<<in2[it-in2.begin()]<<endl;
+                cout<<str[it-in1.begin()]<<" "<<in2[it-in1.begin()]<<endl;
                 break;
             }
         }
