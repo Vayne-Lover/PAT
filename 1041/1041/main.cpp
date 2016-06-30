@@ -7,9 +7,24 @@
 //
 
 #include <iostream>
-
+#include<vector>
+#include<string>
+using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int count=0;
+    int tempInt=0;
+    string tempStr;
+    vector<string> str;
+    vector<int> in1;
+    vector<int> in2;
+    cin>>count;
+    for (int i=0; i<count; ++i) {
+        cin>>tempStr;
+        str.push_back(tempStr);
+        cin>>tempInt;
+        in1.push_back(tempInt);
+        cin>>tempInt;
+        in2.push_back(tempInt);
+    }
     return 0;
 }
