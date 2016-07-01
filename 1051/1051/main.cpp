@@ -26,18 +26,34 @@ int main(int argc, const char * argv[]) {//Take Care when s1,s2-0<0.01//When the
     b2=r2*sin(p2);
     s1=(a1*a2-b1*b2);
     s2=(a1*b2+a2*b1);
-    if(fabs(s1)<0.01f)
-    {
-        s1=0;
-    }
-    if(s1==0)
-    {
-        cout<<"0.00";
-    }
-    else
-    {
-    cout<<setprecision(3)<<s1;
-    }
+//    if(fabs(s1)<0.01f)
+//    {
+//        s1=0;
+//    }
+//    if(s1==0)
+//    {
+//        cout<<"0.00";
+//    }
+//    else
+//    {
+//    cout<<setprecision(3)<<s1;
+//    }
+        if(fabs(s2)<0.01f)
+        {
+            s2=0;
+        }
+        if(s2>0)
+        {
+            cout<<setprecision(3)<<"+"<<s2<<"i"<<endl;
+        }
+        else if(s2<0)
+        {
+        cout<<setprecision(3)<<"-"<<-s2<<"i"<<endl;
+        }
+        else
+        {
+            cout<<"+"<<"0.00"<<"i"<<endl;
+        }
 
     return 0;
 }
