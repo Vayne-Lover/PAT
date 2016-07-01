@@ -38,21 +38,37 @@ int main(int argc, const char * argv[]) {//Take Care when s1,s2-0<0.01//When the
 //    {
 //    cout<<setprecision(3)<<s1;
 //    }
-        if(fabs(s2)<0.01f)
+//        if(fabs(s2)<0.01f)
+//        {
+//            s2=0;
+//        }
+//        if(s2>0)
+//        {
+//            cout<<setprecision(3)<<"+"<<s2<<"i"<<endl;
+//        }
+//        else if(s2<0)
+//        {
+//        cout<<setprecision(3)<<"-"<<-s2<<"i"<<endl;
+//        }
+//        else
+//        {
+//            cout<<"+"<<"0.00"<<"i"<<endl;
+//        }
+        if(s2>=0)
         {
-            s2=0;
-        }
-        if(s2>0)
-        {
-            cout<<setprecision(3)<<"+"<<s2<<"i"<<endl;
-        }
-        else if(s2<0)
-        {
-        cout<<setprecision(3)<<"-"<<-s2<<"i"<<endl;
+            printf("%.2lf+%.2lfi",s1,s2);
         }
         else
         {
-            cout<<"+"<<"0.00"<<"i"<<endl;
+            printf("%.2lf-%.2lfi",s1,fabs(s2));
+        }
+        if(s2>=0)
+        {
+            printf("%.2lf+%.2lfi\n",s1,s2);
+        }
+        else
+        {
+            printf("%.2lf-%.2lfi\n",s1,-s2);
         }
 
     return 0;
