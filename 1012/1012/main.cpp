@@ -86,12 +86,12 @@ int main(int argc, const char * argv[]) {
     else
         cout<<"N"<<" ";
     if(changeA4)
-        cout<<setprecision(2)<<a4<<" ";
+        cout<<fixed<<setprecision(1)<<a4<<" ";//Take care that you should add fixed
     else
         cout<<"N"<<" ";
     if(changeA5)
-        cout<<a5<<" ";
+        cout<<a5;
     else
-        cout<<"N"<<" ";
+        cout<<"N";
     return 0;
 }
