@@ -7,6 +7,7 @@
 //
 
 #include <iostream>
+#include <iomanip>
 #include <vector>
 using namespace std;
 int main(int argc, const char * argv[]) {
@@ -70,7 +71,7 @@ int main(int argc, const char * argv[]) {
         }
     }
     a3=count;
-    a4=sum/countSum;
+    a4=float(sum)/countSum;
     a5=max;
     if(changeA1)
         cout<<a1<<" ";
@@ -85,7 +86,7 @@ int main(int argc, const char * argv[]) {
     else
         cout<<"N"<<" ";
     if(changeA4)
-        cout<<a4<<" ";
+        cout<<setprecision(2)<<a4<<" ";
     else
         cout<<"N"<<" ";
     if(changeA5)
