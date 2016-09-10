@@ -15,6 +15,8 @@ int main(int argc, const char * argv[]) {
     cin>>n;
     vector<string> str1,str2;
     string temp;
+    int win=0;
+    int equal=0;
     for (int i=0; i<n; ++i)
     {
         cin>>temp;
@@ -24,7 +26,16 @@ int main(int argc, const char * argv[]) {
     }
     for(auto it=str1.begin(),it2=str2.begin();it!=str1.end();++it,++it2)
     {
-        cout<<*it<<" "<<*it2<<endl;
+        if(*it==*it2)
+        {
+            equal+=1;
+            continue;
+        }
+        if((*it=="C"&&*it2=="J") || (*it=="J"&&*it2=="B") || (*it=="B"&&*it2=="C"))
+        {
+            win+=1;
+        }
     }
+    cout<<win<<" "<<equal<<" "<<n-win<<endl;
     return 0;
 }
