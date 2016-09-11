@@ -85,8 +85,12 @@ int main(int argc, const char * argv[]) {
         maxa="J";
     if(max(aC,aJ,aB)==aB)
         maxa="B";
-    if(aC==aB)
+    if(aC==aB&&aC>aJ)
+        maxa="B";
+    if(aC==aJ&&aC>aB)
         maxa="C";
+    if(aJ==aB&&aJ>aC)
+        maxa="B";
     
     if(max(bC,bJ,bB)==bC)
         maxb="C";
@@ -94,9 +98,15 @@ int main(int argc, const char * argv[]) {
         maxb="J";
     if(max(bC,bJ,bB)==bB)
         maxb="B";
+    if(bC==bB&&bB>bJ)
+        maxb="B";
+    if(bC==bJ&&bJ>bB)
+        maxb="C";
+    if(bJ==bB&&bB>bC)
+        maxb="B";
     
-    cout<<wina<<" "<<equal<<" "<<max(aC,aJ,aB)<<endl;
-    cout<<winb<<" "<<equal<<" "<<max(bC,bJ,bB)<<endl;
+    cout<<wina<<" "<<equal<<" "<<winb<<endl;
+    cout<<winb<<" "<<equal<<" "<<wina<<endl;
     cout<<maxa<<" "<<maxb<<endl;
     return 0;
 }
