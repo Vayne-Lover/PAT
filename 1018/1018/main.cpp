@@ -52,28 +52,28 @@ int main(int argc, const char * argv[]) {
             aC+=1;
             wina+=1;
         }
-        if(*it=="J"&&*it2=="B")
+        else if(*it=="J"&&*it2=="B")
         {
             aJ+=1;
             wina+=1;
         }
-        if(*it=="B"&&*it2=="C")
+        else if(*it=="B"&&*it2=="C")
         {
             aB+=1;
             wina+=1;
         }
-        
-        if(*it2=="C"&&*it=="J")
+        else if(*it2=="C"&&*it=="J")
         {
             bC+=1;
             winb+=1;
         }
-        if(*it2=="J"&&*it=="B")
+        else if(*it2=="J"&&*it=="B")
         {
             bJ+=1;
             winb+=1;
         }
-        if(*it2=="B"&&*it=="C")
+        //(*it2=="B"&&*it=="C")
+        else
         {
             bB+=1;
             winb+=1;
@@ -83,7 +83,7 @@ int main(int argc, const char * argv[]) {
         maxa="C";
     if(max(aC,aJ,aB)==aJ)
         maxa="J";
-    if(max(aC,aJ,aB)==aB)
+    if (max(aC,aJ,aB)==aB)
         maxa="B";
     if(aC==aB&&aC>aJ)
         maxa="B";
