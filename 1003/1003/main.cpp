@@ -7,9 +7,17 @@
 //
 
 #include <iostream>
+#include<iterator>
 #include <vector>
 #include <string>
 using namespace std;
+bool isCorrect(string str)
+{
+    bool result=true;
+    
+    //cout<<sizeof(str)<<endl;
+    return result;
+}
 int main(int argc, const char * argv[]) {
     int n;
     cin>>n;
@@ -22,7 +30,10 @@ int main(int argc, const char * argv[]) {
     }
     for(auto it=str.begin();it!=str.end();++it)
     {
-        cout<<*it<<endl;
+        cout<<isCorrect(*it)<<endl;
     }
+    string a="grgasd";
+    auto it =a.begin();
+    cout<<*it<<endl;
     return 0;
 }
