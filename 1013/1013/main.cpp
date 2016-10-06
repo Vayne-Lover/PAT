@@ -7,9 +7,12 @@
 //
 
 #include <iostream>
-
+using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    int min=0;
+    int max=0;
+    cin>>min;
+    cin>>max;
+    cout<<min<<" "<<max<<endl;
     return 0;
 }
