@@ -8,11 +8,27 @@
 
 #include <iostream>
 using namespace std;
+bool isPrime(int num)
+{
+    if(num<=1)
+    {
+        return false;
+    }
+    for(int i=num-1;i>1;--i)
+    {
+        if(num%i==0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
 int main(int argc, const char * argv[]) {
     int min=0;
     int max=0;
     cin>>min;
     cin>>max;
-    cout<<min<<" "<<max<<endl;
+    cout<<isPrime(2)<<endl;
     return 0;
 }
