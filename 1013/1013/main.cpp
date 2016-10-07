@@ -53,8 +53,15 @@ int main(int argc, const char * argv[]) {
         }
         else
         {
+            if(j==max-min)
+            {
+                cout<<i;
+            }
+            else
+            {
             cout<<i<<" ";
             ten+=1;
+            }
         }
         i++;
     }
