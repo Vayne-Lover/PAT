@@ -31,22 +31,31 @@ int main(int argc, const char * argv[]) {
     cin>>max;
     int i=1;
     int count=0;
-    bool ten=false;
+    int ten=1;
     while(count<min)
     {
+        i++;
         if(isPrime(i))
         {
             count++;
         }
-        i++;
     }
-    for(int j=0;j<max-min;++j)
+    for(int j=0;j<=max-min;++j)
     {
         while(!isPrime(i))
         {
             i++;
         }
-        cout<<i<<endl;
+        if(ten%10==0)
+        {
+            cout<<i<<endl;
+            ten=1;
+        }
+        else
+        {
+            cout<<i<<" ";
+            ten+=1;
+        }
         i++;
     }
     return 0;
