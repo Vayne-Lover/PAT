@@ -29,6 +29,25 @@ int main(int argc, const char * argv[]) {
     int max=0;
     cin>>min;
     cin>>max;
-    cout<<isPrime(2)<<endl;
+    int i=1;
+    int count=0;
+    bool ten=false;
+    while(count<min)
+    {
+        if(isPrime(i))
+        {
+            count++;
+        }
+        i++;
+    }
+    for(int j=0;j<max-min;++j)
+    {
+        while(!isPrime(i))
+        {
+            i++;
+        }
+        cout<<i<<endl;
+        i++;
+    }
     return 0;
 }
