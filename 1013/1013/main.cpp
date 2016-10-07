@@ -23,7 +23,19 @@ bool isPrime(int num)
     }
     return true;
 }
-
+bool Prime(int n)
+{
+    if(n<2)
+        return false;
+    for(int i=2;i*i<=n;++i)
+    {
+        if(n%i==0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
 int main(int argc, const char * argv[]) {
     int min=0;
     int max=0;
@@ -35,14 +47,14 @@ int main(int argc, const char * argv[]) {
     while(count<min)
     {
         i++;
-        if(isPrime(i))
+        if(Prime(i))
         {
             count++;
         }
     }
     for(int j=0;j<=max-min;++j)
     {
-        while(!isPrime(i))
+        while(!Prime(i))
         {
             i++;
         }
