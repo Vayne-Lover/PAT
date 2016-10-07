@@ -11,12 +11,27 @@
 #include <vector>
 #include <string>
 using namespace std;
-bool isCorrect(string str)
+void isCorrect(string str)
 {
-    bool result=true;
+    //bool result=true;
+    for(auto it=str.begin();it!=str.end();++it)
+    {
+        if(*it!='P'||*it!='A'||*it!='T')
+        {
+            cout<<"No"<<endl;
+            return;
+        }
+    }
+    cout<<"Yes"<<endl;
     
-    //cout<<sizeof(str)<<endl;
-    return result;
+//    if(result)
+//    {
+//        cout<<"Yes"<<endl;
+//    }
+//    else
+//    {
+//        cout<<"No"<<endl;
+//    }
 }
 int main(int argc, const char * argv[]) {
     int n;
@@ -28,12 +43,11 @@ int main(int argc, const char * argv[]) {
         getline(cin,temp);
         str.push_back(temp);
     }
+    //cout<<endl;
     for(auto it=str.begin();it!=str.end();++it)
     {
-        cout<<isCorrect(*it)<<endl;
+        isCorrect(*it);
     }
-    string a="grgasd";
-    auto it =a.begin();
-    cout<<*it<<endl;
+
     return 0;
 }
