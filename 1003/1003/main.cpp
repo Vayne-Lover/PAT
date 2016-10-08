@@ -11,16 +11,26 @@
 #include <vector>
 #include <string>
 using namespace std;
+bool isPAT(char* c)
+{
+    bool result=false;
+    if(*c=='P'||*c=='A'||*c=='T')
+    {
+        result=true;
+    }
+    return result;
+}
 void isCorrect(string str)
 {
     //bool result=true;
     for(auto it=str.begin();it!=str.end();++it)
     {
-        if(*it!='P'||*it!='A'||*it!='T')
+        while(*it=='P'||*it=='A'||*it=='T')
         {
-            cout<<"No"<<endl;
-            return;
+            it+=1;
         }
+        cout<<"No"<<endl;
+        return;
     }
     cout<<"Yes"<<endl;
     
