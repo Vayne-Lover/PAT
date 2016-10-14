@@ -26,11 +26,12 @@ bool Prime(int n)
 int fun(int n)
 {
     int count=0;
-    for(int i=1;i<n;++n)
+    for(int i=3;i<=n;++i)
     {
         if(Prime(i)&&Prime(i-2))
         {
             count++;
+            i+=2;
         }
     }
     return count;
