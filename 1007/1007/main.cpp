@@ -2,7 +2,7 @@
 //  main.cpp
 //  1007
 //
-//  Created by 姜况童 on 10/12/16.
+//  Created by 姜况童 on 10/16/16.
 //  Copyright © 2016 Vayne-Lover. All rights reserved.
 //
 
@@ -14,7 +14,7 @@ bool Prime(int n)
     {
         return false;
     }
-    for(int i=2;i*i<n;++i)
+    for(int i=2;i*i<=n;++i)
     {
         if(n%i==0)
         {
@@ -31,7 +31,8 @@ int fun(int n)
         if(Prime(i)&&Prime(i-2))
         {
             count++;
-            i+=2;
+            //cout<<i<<" "<<i-2<<endl;
+            i+=1;
         }
     }
     return count;
