@@ -14,7 +14,7 @@ void Change(int a[],int min,int max)
     {
         return;
     }
-    for(int i=0;i<=(min+max-1)/2;++i)
+    for(int i=0;i<(max-min)/2;++i)
     {
         int temp=a[i+min];
         a[i+min]=a[max-1-i];
@@ -24,8 +24,8 @@ void Change(int a[],int min,int max)
 int main(int argc, const char * argv[]) {
     int a[]={1,2,3,4,5,6};
     Change(a, 0, 3);
-//    Change(a, 3, 6);
-//    Change(a, 0, 6);
+    Change(a, 3, 6);
+    Change(a, 0, 6);
     for(int i=0;i<6;++i)
     {
         cout<<a[i]<<endl;
