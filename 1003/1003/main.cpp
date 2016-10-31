@@ -16,7 +16,7 @@ bool isPAT(char* c)
     bool result=false;
     if(*c=='P'||*c=='A'||*c=='T')
     {
-        result=true;;;
+        result=true;
     }
     return result;
 }

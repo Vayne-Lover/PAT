@@ -22,6 +22,7 @@ void Change(int a[],int min,int max)
     }
 }
 int main(int argc, const char * argv[]) {
+    int m,n;
     int a[]={1,2,3,4,5,6};
     Change(a, 0, 3);
     Change(a, 3, 6);
