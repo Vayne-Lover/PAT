@@ -7,7 +7,6 @@
 //
 
 #include <iostream>
-#include <vector>
 using namespace std;
 void Change(int a[],int min,int max)
 {
@@ -25,21 +24,19 @@ void Change(int a[],int min,int max)
 int main(int argc, const char * argv[]) {
     int m,n;
     cin>>n>>m;
-    vector<int> vec(n,0);
-    auto it=vec.begin();
+    int b[n];
     for(int i=0;i<n;++i)
     {
-        int temp=0;
+        int temp;
         cin>>temp;
-        *(it+i)=temp;
+        b[i]=temp;
     }
-    int a[]={1,2,3,4,5,6};
-    Change(a, 0, 3);
-    Change(a, 3, 6);
-    Change(a, 0, 6);
+    Change(b, 0, m);
+    Change(b, m, n);
+    Change(b, 0, n);
     for(int i=0;i<6;++i)
     {
-        cout<<a[i]<<endl;
+        cout<<b[i]<<endl;
     }
     return 0;
 }
