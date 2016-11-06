@@ -7,9 +7,9 @@
 //
 
 #include <iostream>
-
+#include<string>
+using namespace std;
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    string str1,str2,str3,str4;
     return 0;
 }
