@@ -9,8 +9,10 @@
 #include <iostream>
 #include<string>
 using namespace std;
-void GetResult(string str1,string str2,string str3,string str4)
+void GetResult(string str1,string str2)
 {
+    auto it1=str1.begin();
+    auto it2=str2.begin();
     
 }
 
