@@ -9,6 +9,11 @@
 #include <iostream>
 #include<string>
 using namespace std;
+void GetResult(string str1,string str2,string str3,string str4)
+{
+    
+}
+
 int main(int argc, const char * argv[]) {
     string str[7]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
     string str1,str2,str3,str4;
