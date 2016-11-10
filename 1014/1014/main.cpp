@@ -9,11 +9,17 @@
 #include <iostream>
 #include<string>
 using namespace std;
-void GetResult(string str1,string str2)
+void GetResult(string str1,string str2,int m,int n)
 {
     auto it1=str1.begin();
     auto it2=str2.begin();
-    
+    for(int i=0;i<m;++i)
+    {
+        for(int j=0;j<n;++j)
+        {
+            
+        }
+    }
 }
 
 int main(int argc, const char * argv[]) {
