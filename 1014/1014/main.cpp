@@ -17,7 +17,11 @@ void GetResult(string str1,string str2,int m,int n)
     {
         for(int j=0;j<n;++j)
         {
-            
+            if(*it1==*it2)
+            {
+                cout<<*it1<<" "<<*it2<<endl;
+                break;
+            }
         }
     }
 }
