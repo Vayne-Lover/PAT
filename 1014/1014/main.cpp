@@ -29,6 +29,7 @@ void GetResult(string str1,string str2,int m,int n)
 int main(int argc, const char * argv[]) {
     string str[7]={"MON","TUE","WED","THU","FRI","SAT","SUN"};
     string str1,str2,str3,str4;
+    char a[60],b[60],c[60],d[60];
     cin>>str1>>str2>>str3>>str4;
     cout<<str1<<endl;
     cout<<str2<<endl;
