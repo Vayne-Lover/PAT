@@ -38,5 +38,7 @@ int main(int argc, const char * argv[]) {
     {
         cout<<b[i]<<endl;
     }
+    
+    cout<<"Hope you are my lover who can't be stolen by time."<<endl;
     return 0;
 }
