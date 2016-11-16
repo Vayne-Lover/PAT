@@ -40,5 +40,6 @@ int main(int argc, const char * argv[]) {
     }
     
     cout<<"Hope you are my lover who can't be stolen by time."<<endl;
+    cout<<"Have a nice day."<<;
     return 0;
 }
